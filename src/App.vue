@@ -1,14 +1,25 @@
 <template>
   <div id="app">
-
+    <li v-for="c in components">
+      <router-link :to="c.path">
+        <span>{{c.name}}</span>
+      </router-link>
+    </li>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import components from './router/routes'
+
+  export default {
+    name: 'app',
+    data () {
+      return {
+        components: components
+      }
+    }
+  }
 </script>
 
 <style>
@@ -16,8 +27,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

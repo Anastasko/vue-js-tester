@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="text-align: center">
     <button @click="gen()">Скласти тести</button>
     <h2>Тести</h2>
     <div v-for="(test, testNumber) of shownTests" class="box" :class="klass(test)">
@@ -72,21 +72,6 @@ export default {
 </script>
 
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-
   .box {
     margin: 10px 50px 10px 50px;
     display: block;
