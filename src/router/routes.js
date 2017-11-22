@@ -4,9 +4,14 @@
 import Tests from '@/components/Tests'
 import Theory from '@/components/Theory'
 import Program from '@/components/Program'
+import Tree from '@/components/Tree'
 
 export default [
   {
+    path: '/theory',
+    name: 'Theory',
+    component: Theory
+  }, {
     path: '/',
     name: 'Tests',
     component: Tests
@@ -15,8 +20,8 @@ export default [
     name: 'Program',
     component: Program
   }, {
-    path: '/theory',
-    name: 'Theory',
-    component: Theory
+    path: '/tree',
+    name: 'Tree',
+    component: Tree
   }
 ]
