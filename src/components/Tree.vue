@@ -2,7 +2,7 @@
 
   <div class="tree">
 
-    <img src="/static/tree.png"/>
+    <img src="http://btechsmartclass.com/DS/images/BST%20Example.png"/>
 
   </div>
 

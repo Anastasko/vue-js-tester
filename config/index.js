@@ -54,7 +54,7 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'vue-js-tester/static',
+    assetsSubDirectory: 'static',
     assetsPublicPath: '/vue-js-tester/',
 
     /**
