@@ -9,19 +9,19 @@ import Tree from '@/components/Tree'
 export default [
   {
     path: '/theory',
-    name: 'Theory',
+    name: 'Теорія',
     component: Theory
   }, {
-    path: '/',
-    name: 'Tests',
-    component: Tests
-  }, {
     path: '/program',
-    name: 'Program',
+    name: 'Код програми',
     component: Program
   }, {
     path: '/tree',
-    name: 'Tree',
+    name: 'Ілюстрація',
     component: Tree
+  }, {
+    path: '/',
+    name: 'Тести',
+    component: Tests
   }
 ]

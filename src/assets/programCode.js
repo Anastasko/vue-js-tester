@@ -30,14 +30,32 @@ Begin
         writeTree(root^.right);
     end;
 End;
- 
+
+
+Function search(node : TNode; val : integer) : string;
+Begin
+    if (node = Nil)
+    then search := 'not found'
+    else if node^.info = val 
+    then search := 'present'
+    else if node^.info > val
+    then search := search(node^.left, val)
+    else search := search(node^.right, val);
+End;
+
 Begin
     read(n);
     root := Nil;
     for i := 1 to n do begin
         read(x);
-        addToTree(root , x);
+        addToTree(root, x);
     end;
     writeTree(root);
+    writeln;
+    writeln(2, ' ', search(root, 2));
+    writeln(10, ' ', search(root, 10));
 End.
+
+-- input 5 3 1 2 4 5
+
 `
