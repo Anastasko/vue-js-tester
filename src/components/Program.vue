@@ -24,8 +24,4 @@ export default {
 }
 </script>
 
-<style>
-  .CodeMirror {
-    height: 100vh;
-  }
-</style>
+

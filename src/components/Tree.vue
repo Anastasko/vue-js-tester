@@ -2,7 +2,7 @@
 
   <div class="tree">
 
-    <img src="static/tree.png"/>
+    <img src="/static/tree.png"/>
 
   </div>
 
